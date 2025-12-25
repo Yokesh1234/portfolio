@@ -2,6 +2,7 @@
         :root {
             --e-ink-bg: #f8f8f8;
             --e-ink-text: #111111;
+            --e-ink-years: #f86d8b;
             --e-ink-gray: #888888;
             --e-ink-light-gray: #e0e0e0;
             --e-ink-border: #cccccc;
@@ -321,6 +322,9 @@
 
         .skill-name {
             color: var(--e-ink-text);
+        }
+        .years {
+            color: var(--e-ink-years);
         }
 
         .skill-level {
