@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen | E-Ink Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assert/css/style.css">
+</head>
+<body>
+    <!-- E-ink texture overlay -->
+    <div class="e-ink-texture"></div>
+    
+    <!-- E-ink refresh indicator -->
+    <div class="refresh-indicator"></div>
+    
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Yokesh<span>K</span></div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section - Always visible on home -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>System admin &<br>Devops</h1>
+            <span class="title">learning <span class="highlight blue">AWS</span> to improve my skills</span>
+            <p>I am a Linux system Administrator with a strong passion for technology and a quick learning ability.</p>
+            
+            <div class="nav-controls">
+                <button class="nav-btn" data-section="about">
+                    <i class="fas fa-user"></i> About & Skills
+                </button>
+                <button class="nav-btn" data-section="projects">
+                    <i class="fas fa-code"></i> Projects
+                </button>
+                <button class="nav-btn" data-section="contact">
+                    <i class="fas fa-envelope"></i> Contact
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="img-border"></div>
+            <img src="/assert/images/profile1.png" alt="Alex Chen - E-Ink Designer" class="profile-img">
+        </div>
+    </section>
+    
+   
+    
+    <!-- About Section - Hidden by default -->
+    <section id="about" class="content-section">
+        <h2 class="section-title">About & Skills</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+            I am a Linux <span class="highlight blue">system Administrator</span> with a strong passion for technology and a quick learning ability. 
+            I constantly strive to expand my knowledge through various resources, such as YouTube and other online platforms, 
+            which help me stay up-to-date with the latest industry trends and best practices. My ability to quickly grasp new concepts 
+            allows me to efficiently apply them to improve system performance and support the overall IT infrastructure. 
+                </p>
+
+                <p>
+            I am deeply committed to contributing to the success of the company by leveraging the skills 
+            I acquire to enhance system reliability, security, and efficiency. 
+            I am excited about the opportunity to continue growing within the organization, while applying 
+            my skills and knowledge to help drive the company’s growth and success.
+                </p>
+
+            </div>
+            
+        </div>
+
+        <div class="card-grid">
+  <div class="card">
+
+    <div class="card-content">
+      <h3 style="margin-bottom: 25px; font-weight: normal; color: var(--accent-blue);">Core Skills</h3>
+                <ul class="skills-list">
+                    <li>
+                        <span class="skill-name">UI/UX Design</span>
+                        <span class="skill-level">Advanced</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Frontend Development</span>
+                        <span class="skill-level">Advanced</spthemeTogglean>
+                    </li>
+                    <li>
+                        <span class="skill-name">E-Ink Interface Design</span>
+                        <span class="skill-level">Specialist</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Accessibility</span>
+                        <span class="skill-level">Advanced</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Responsive Design</span>
+                        <span class="skill-level">Expert</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Prototyping</span>
+                        <span class="skill-level">Advanced</span>
+                    </li>
+                </ul>
+    </div>
+  </div>
+  <div class="card">
+
+    <div class="card-content">
+      <h3 style="margin-bottom: 25px; font-weight: normal; color: var(--accent-blue);">Education</h3>
+                <ul class="skills-list">
+                    <li>
+                        <span class="skill-name">UI/UX Design</span>
+                        <span class="skill-level">Advanced</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Frontend Development</span>
+                        <span class="skill-level">Advanced</spthemeTogglean>
+                    </li>
+                    <li>
+                        <span class="skill-name">E-Ink Interface Design</span>
+                        <span class="skill-level">Specialist</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Accessibility</span>
+                        <span class="skill-level">Advanced</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Responsive Design</span>
+                        <span class="skill-level">Expert</span>
+                    </li>
+                    <li>
+                        <span class="skill-name">Prototyping</span>
+                        <span class="skill-level">Advanced</span>
+                    </li>
+                </ul>
+    </div>
+  </div>
+  
+</div>
+
+     
+    </section>
+    
+    <!-- Projects Section - Hidden by default -->
+    <section id="projects" class="content-section">
+        <h2 class="section-title">E-Ink Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>E-Ink Dashboard</h3>
+                <p>A productivity dashboard designed for e-ink tablets, featuring minimal color accents for priority indicators and maximum readability in all lighting conditions.</p>
+                <div class="project-tags">
+                    <span class="blue">UI Design</span>
+                    <span>E-Ink</span>
+                    <span>React</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Monochrome Weather App</h3>
+                <p>A weather application that uses subtle blue accents for temperature indicators while maintaining an e-ink friendly interface with high contrast visuals.</p>
+                <div class="project-tags">
+                    <span>UX Design</span>
+                    <span class="blue">JavaScript</span>
+                    <span>API Integration</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Readability-Focused Reader</h3>
+                <p>An e-book reader interface that uses minimal color accents for interactive elements while maintaining the reading-focused experience of e-ink displays.</p>
+                <div class="project-tags">
+                    <span>UI/UX</span>
+                    <span>Typography</span>
+                    <span class="blue">Accessibility</span>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    
+    <!-- Contact Section - Hidden by default -->
+    <section id="contact" class="content-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-item-content">
+                        <h3>Email</h3>
+                        <p>alex@einkdesign.dev</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-item-content">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 234-5678</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-item-content">
+                        <h3>Location</h3>
+                        <p>Seattle, WA</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="contact-item-content">
+                        <h3>Availability</h3>
+                        <p>Available for select projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="nav-btn active" style="margin-top: 10px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        <button class="close-section" data-section="home">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </button>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-codepen"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-blog"></i></a>
+        </div>
+        <p class="copyright">&copy; 2023 Alex Chen. E-Ink Design Portfolio.</p>
+        <p class="copyright" style="margin-top: 5px; font-size: 0.8rem;">Click navigation links to toggle sections</p>
+    </footer>
+    
+    <script src="/assert/js/script.js"></script>
+</body>
+</html>
