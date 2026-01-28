@@ -203,7 +203,6 @@
         .profile-img {
             width: 100%;
             height: auto;
-            filter:hue-rotate(24deg);
             border-radius: 2px;
             border: 1px solid var(--e-ink-border);
             transition: filter var(--transition-slow);
@@ -300,7 +299,8 @@
         /* About Section */
         .about-content {
             display: grid;
-            gap: 60px;
+            gap: 50px;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .about-text p {
@@ -683,14 +683,8 @@
   border-width: thin;
 }
 
-.card img {
-  width: 100%; /* Makes the image fill the width of the card */
-  height: auto;
-  display: block;
-}
-
 .card-content {
-  padding: 16px;
+  padding: 40px 10px 0px 0px;
 }
 
 .card-content h3 {
@@ -705,6 +699,7 @@
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 4px;
+  
 }
 
 /* Responsive design: switches to one column on small screens. */
@@ -714,3 +709,42 @@
   }
 }
 
+
+
+.edu-content:hover {
+  transform: translateY(-5px); /* Lifts the card slightly on hover */
+  border-color: #4a6fa5;
+  border-style: groove;
+  padding: auto;
+  border-width: thin;
+}
+
+.edu-content {
+  padding: 40px 10px 0px 0px;
+}
+
+.edu-content h3 {
+  margin-top: 0;
+}
+
+.edu-content a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--e-ink-bg);
+  color: var(--accent-blue);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  
+}
+
+/* Responsive design: switches to one column on small screens. */
+@media (max-width: 600px) {
+  .edu-grid {
+    grid-template-columns: 1fr; /* One column takes up the full width */
+  }
+}
+.contact-item-content a {
+    color: var(--e-ink-text);
+    text-decoration: none;
+}
